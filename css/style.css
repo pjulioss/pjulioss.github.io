@@ -66,8 +66,13 @@ a {
         display: none;
     }
 
+    .menu-nav a:hover {
+        border: none;
+    }
+
     .menu-nav ul {
         float: none;
+        text-align: center;
     }
 
     .menu-nav li a {
@@ -139,6 +144,10 @@ a {
         max-width: 620px;
     }
 
+    .sobre-descricao {
+        margin: 0 20px;
+    }
+
 }
 
 .tecnologias {
@@ -192,6 +201,8 @@ a {
     padding: 40px;
 }
 
+
+
 .portfolio-desc h3 {
     font-size: 1.5em;
     border-bottom: 1px solid #242f40;
@@ -220,11 +231,16 @@ p {
 @media(max-width: 739px) {
     .portfolio-desc {
         height: 200px;
+        padding: 0 20px;
     }
 
     .portfolio-desc h3,
     p {
-        margin-bottom: 0;
+        margin-bottom: 10px;
+    }
+
+    .portfolio-desc p:nth-child(3) {
+        display: none;
     }
 }
 
@@ -248,10 +264,12 @@ p {
 @media(max-width: 739px) {
     .contato {
         margin-top: 80px;
+        padding: 20px;
+
     }
 
     .contato p {
-        font-size: 2.25em;
+        font-size: 2em;
     }
 }
 
@@ -286,7 +304,13 @@ footer i {
         background: none;
     }
 
-    footer i {
-        display: inline;
+    footer p {
+        display: none
     }
+
+    .grid-mobile-3 {
+        text-align: center;
+    }
+
+
 }
