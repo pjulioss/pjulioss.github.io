@@ -234,6 +234,10 @@ p {
         padding: 0 20px;
     }
 
+    .portfolio-desc h3 {
+        font-size: 1.25em;
+    }
+
     .portfolio-desc h3,
     p {
         margin-bottom: 10px;
