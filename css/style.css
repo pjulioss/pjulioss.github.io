@@ -1,0 +1,292 @@
+/* Reset */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Monda', sans-serif;
+    color: #222222;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #242f40;
+}
+
+/* menu */
+
+.menu {
+    padding: 15px 0;
+}
+
+.menu-nav ul {
+    float: right;
+}
+
+.menu-nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.menu-nav a {
+    text-decoration: none;
+    font-size: 1.125em;
+    margin-left: 10px;
+    padding: 10px;
+    display: block;
+    color: #242f40;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu-nav a:hover {
+    border-bottom: 2px solid #FB8B24;
+}
+
+@media(max-width: 739px) {
+    .menu-logo {
+        display: none;
+    }
+
+    .menu-nav ul {
+        float: none;
+    }
+
+    .menu-nav li a {
+        padding: 10px 0;
+        margin-left: 0;
+        margin-right: 40px;
+    }
+}
+
+/* apresentacao */
+.intro {
+    height: 560px;
+    padding: 120px 0;
+    background: url('../img/formas.png') no-repeat right;
+
+}
+
+.intro h1 {
+    font-size: 3.625em;
+    line-height: 1.2em;
+}
+
+.intro h1 span {
+    color: #FB8B24;
+}
+
+@media(max-width: 830px) {
+    .intro {
+        background: none;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding: 60px 0;
+        height: 480px;
+    }
+
+    .intro h1 {
+        font-size: 2.625em;
+    }
+}
+
+/* sobre */
+
+.sobre-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.sobre-container::after,
+.sobre-container::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.sobre-descricao {
+    background: #fff;
+}
+
+.sobre-descricao p {
+    position: relative;
+    top: -40px;
+    background: #fff;
+    padding-top: 10px;
+    color: #222222;
+}
+
+@media(max-width:739px) {
+    .sobre-container {
+        max-width: 620px;
+    }
+
+}
+
+.tecnologias {
+    background: #222222;
+    color: #fff;
+    padding: 20px 40px;
+    /* height: 600px; */
+}
+
+.tecnologias h3 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    border-bottom: 1px solid #242f40;
+}
+
+.tecnologias span {
+    font-weight: bold;
+}
+
+.tecnologias li {
+    list-style: none;
+    line-height: 2;
+}
+
+.tecnologias p a {
+    color: #FB8B24;
+}
+
+.tecnologias ul {
+    margin-bottom: 40px;
+}
+
+
+
+/* portfolio */
+
+.portfolio {
+    margin-top: 40px;
+}
+
+.portfolio .container {
+    margin-top: 20px;
+}
+
+
+.portfolio-desc {
+    background: #222222;
+    height: 330px;
+    text-align: center;
+    padding: 40px;
+}
+
+.portfolio-desc h3 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #242f40;
+}
+
+.portfolio-desc h3,
+p {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.portfolio-desc p:nth-child(3) {
+    font-style: italic;
+    color: #c2c2c2;
+}
+
+.portfolio-desc a {
+    color: #FB8B24;
+}
+
+.portfolio-desc a:nth-child(even) {
+    border-bottom: 1px solid;
+    margin-right: 20px;
+}
+
+@media(max-width: 739px) {
+    .portfolio-desc {
+        height: 200px;
+    }
+
+    .portfolio-desc h3,
+    p {
+        margin-bottom: 0;
+    }
+}
+
+/* contato */
+.contato {
+    background-color: #242f40;
+    padding: 80px 0;
+    color: #fff;
+    margin-top: 140px;
+}
+
+.contato p {
+    font-size: 2.625em;
+}
+
+.contato a {
+    color: #FB8B24;
+    font-weight: bold;
+}
+
+@media(max-width: 739px) {
+    .contato {
+        margin-top: 80px;
+    }
+
+    .contato p {
+        font-size: 2.25em;
+    }
+}
+
+/* footer */
+footer {
+    padding: 20px 0;
+    background: url('../img/forma-footer.png') no-repeat left;
+
+}
+
+footer p a {
+    font-style: normal;
+    font-weight: bold;
+    color: #242f40;
+    text-transform: uppercase;
+}
+
+footer p {
+    font-style: italic;
+    margin-top: 20px;
+    color: #222222;
+}
+
+footer i {
+    color: #222222;
+    margin-top: 18px;
+    display: inline-block;
+}
+
+@media(max-width: 739px) {
+    footer {
+        background: none;
+    }
+
+    footer i {
+        display: inline;
+    }
+}
