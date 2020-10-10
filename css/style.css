@@ -61,6 +61,7 @@ a {
     border-bottom: 2px solid #FB8B24;
 }
 
+
 @media(max-width: 739px) {
     .menu-logo {
         display: none;
@@ -231,16 +232,11 @@ p {
 @media(max-width: 739px) {
     .portfolio-desc {
         height: 200px;
-        padding: 0 20px;
+        padding: 16px;
     }
 
     .portfolio-desc h3 {
-        font-size: 1.25em;
-    }
-
-    .portfolio-desc h3,
-    p {
-        margin-bottom: 10px;
+        display: none;
     }
 
     .portfolio-desc p:nth-child(3) {
@@ -257,7 +253,7 @@ p {
 }
 
 .contato p {
-    font-size: 2.625em;
+    font-size: 2em;
 }
 
 .contato a {
@@ -273,7 +269,7 @@ p {
     }
 
     .contato p {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 }
 
