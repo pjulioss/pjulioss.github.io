@@ -12,7 +12,6 @@ li {
 
 * {
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -41,15 +40,19 @@ a {
     float: right;
 }
 
-.menu-nav ul li {
+.menu-nav li {
     list-style: none;
     display: inline-block;
+}
+
+.menu li+li {
+    margin-left: 10px;
+
 }
 
 .menu-nav a {
     text-decoration: none;
     font-size: 1.125em;
-    margin-left: 10px;
     padding: 10px;
     display: block;
     color: #242f40;
@@ -62,7 +65,7 @@ a {
 }
 
 
-@media(max-width: 739px) {
+@media(max-width: 830px) {
     .menu-logo {
         display: none;
     }
@@ -76,9 +79,9 @@ a {
         text-align: center;
     }
 
-    .menu-nav li a {
-        padding: 10px 0;
-        margin-left: 0;
+    .menu-nav li+li {
+        /* padding: 10px 0; */
+        /* margin-left: 0; */
         margin-right: 40px;
     }
 }
@@ -140,7 +143,7 @@ a {
     color: #222222;
 }
 
-@media(max-width:739px) {
+@media(max-width:830px) {
     .sobre-container {
         max-width: 620px;
     }
@@ -229,17 +232,17 @@ p {
     margin-right: 20px;
 }
 
-@media(max-width: 739px) {
+@media(max-width: 830px) {
     .portfolio-desc {
         height: 200px;
         padding: 16px;
     }
 
     .portfolio-desc h3 {
-        display: none;
+        /* display: none; */
     }
 
-    .portfolio-desc p:nth-child(3) {
+    .portfolio-desc p:nth-child(2) {
         display: none;
     }
 }
@@ -261,7 +264,7 @@ p {
     font-weight: bold;
 }
 
-@media(max-width: 739px) {
+@media(max-width: 830px) {
     .contato {
         margin-top: 80px;
         padding: 20px;
@@ -299,13 +302,13 @@ footer i {
     display: inline-block;
 }
 
-@media(max-width: 739px) {
+@media(max-width: 830px) {
     footer {
         background: none;
     }
 
     footer p {
-        display: none
+        text-align: center;
     }
 
     .grid-mobile-3 {
