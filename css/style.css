@@ -238,10 +238,6 @@ p {
         padding: 16px;
     }
 
-    .portfolio-desc h3 {
-        /* display: none; */
-    }
-
     .portfolio-desc p:nth-child(2) {
         display: none;
     }
