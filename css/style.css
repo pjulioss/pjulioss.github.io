@@ -313,3 +313,14 @@ footer i {
 
 
 }
+
+/* animação no scroll (lateral) */
+.js-scroll {
+    opacity: 0;
+
+}
+
+.js-scroll.ativo {
+    opacity: 1;
+    transition: .4s ease-in;
+}
